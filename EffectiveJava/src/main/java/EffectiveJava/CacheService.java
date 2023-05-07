@@ -17,7 +17,7 @@ public class CacheService implements CacheInterface {
         }
 
         if(!cacheEntries.containsKey(cacheKey)) {
-            String putMessage = "Item %s inserted added to cache";
+            String putMessage = "Item %s added to cache";
             System.out.println(String.format(putMessage,cacheKey ));
             cacheEntries.put(cacheKey, cacheObject);
         }
